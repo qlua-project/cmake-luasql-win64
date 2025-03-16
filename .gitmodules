@@ -1,0 +1,3 @@
+[submodule "luasql"]
+	path = src
+	url = https://github.com/lunarmodules/luasql
