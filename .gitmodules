@@ -1,3 +1,7 @@
 [submodule "luasql"]
 	path = src
 	url = https://github.com/lunarmodules/luasql
+[submodule "sqlite"]
+	path = externals/sqlite
+	url = https://github.com/qlua-project/external-sqlite-win64
+	branch = main
