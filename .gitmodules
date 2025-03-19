@@ -4,7 +4,7 @@
 [submodule "sqlite"]
 	path = externals/sqlite
 	url = https://github.com/qlua-project/external-sqlite-win64
-	branch = main
+	branch = canonical
 [submodule "lua"]
 	path = externals/lua
 	url = https://github.com/qlua-project/cmake-lua-win64
