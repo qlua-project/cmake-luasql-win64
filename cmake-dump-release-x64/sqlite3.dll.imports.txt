@@ -1,0 +1,158 @@
+Microsoft (R) COFF/PE Dumper Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file ..\cmake-build-release-x64\sqlite3.dll
+
+File Type: DLL
+
+  Section contains the following imports:
+
+    lua54.dll
+             180004110 Import Address Table
+             180005218 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          5C lua_pushlstring
+                          5A lua_pushinteger
+                          5E lua_pushnumber
+                          7D lua_toboolean
+                          80 lua_tointegerx
+                          82 lua_tonumberx
+                          87 lua_typename
+                          86 lua_type
+                          4C lua_isnumber
+                          78 lua_settop
+                          48 lua_gettop
+                          24 luaL_ref
+                          1B luaL_newmetatable
+                          35 lua_concat
+                          61 lua_pushvalue
+                          76 lua_setmetatable
+                          77 lua_settable
+                          65 lua_rawgeti
+                          2C luaL_unref
+                          11 luaL_error
+                           F luaL_checkudata
+                           D luaL_checkstack
+                          1F luaL_optlstring
+                           A luaL_checklstring
+                           4 luaL_argerror
+                          55 lua_next
+                          39 lua_error
+                          69 lua_rawseti
+                          3C lua_getfield
+                          58 lua_pushcclosure
+                          59 lua_pushfstring
+                          5F lua_pushstring
+                          5D lua_pushnil
+                          85 lua_touserdata
+                          81 lua_tolstring
+                          68 lua_rawset
+                          57 lua_pushboolean
+                          54 lua_newuserdatauv
+                          26 luaL_setfuncs
+                          37 lua_createtable
+
+    winsqlite3.dll
+             180004258 Import Address Table
+             180005360 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          7C sqlite3_reset
+                          57 sqlite3_finalize
+                          30 sqlite3_column_type
+                          27 sqlite3_column_bytes
+                          2F sqlite3_column_text
+                          2D sqlite3_column_int64
+                          2B sqlite3_column_double
+                          26 sqlite3_column_blob
+                          9C sqlite3_step
+                          2A sqlite3_column_decltype
+                          2E sqlite3_column_name
+                          29 sqlite3_column_count
+                           E sqlite3_bind_parameter_count
+                          12 sqlite3_bind_text
+                           F sqlite3_bind_parameter_index
+                           B sqlite3_bind_int
+                           A sqlite3_bind_double
+                          76 sqlite3_prepare_v2
+                          4C sqlite3_errmsg
+                          71 sqlite3_open_v2
+                          58 sqlite3_free
+                          6D sqlite3_mprintf
+                          1E sqlite3_busy_timeout
+                          20 sqlite3_changes
+                          64 sqlite3_last_insert_rowid
+                          4F sqlite3_exec
+                          23 sqlite3_close
+                           D sqlite3_bind_null
+
+    VCRUNTIME140.dll
+             180004080 Import Address Table
+             180005188 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 strstr
+                           8 __C_specific_handler
+                          25 __std_type_info_destroy_list
+                          3E memset
+                          3C memcpy
+                          40 strchr
+
+    api-ms-win-crt-stdio-l1-1-0.dll
+             180004100 Import Address Table
+             180005208 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D __stdio_common_vsprintf
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             1800040B8 Import Address Table
+             1800051C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          36 _initterm
+                          3F _seh_filter_dll
+                          18 _configure_narrow_argv
+                          33 _initialize_narrow_environment
+                          34 _initialize_onexit_table
+                          22 _execute_onexit_table
+                          16 _cexit
+                          37 _initterm_e
+
+    KERNEL32.dll
+             180004000 Import Address Table
+             180005108 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         38E IsDebuggerPresent
+                         378 InitializeSListHead
+                         125 DisableThreadLibraryCalls
+                         2F8 GetSystemTimeAsFileTime
+                         226 GetCurrentThreadId
+                         222 GetCurrentProcessId
+                         4DF RtlCaptureContext
+                         4E7 RtlLookupFunctionEntry
+                         4EE RtlVirtualUnwind
+                         5CE UnhandledExceptionFilter
+                         58D SetUnhandledExceptionFilter
+                         221 GetCurrentProcess
+                         5AC TerminateProcess
+                         395 IsProcessorFeaturePresent
+                         45B QueryPerformanceCounter
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
