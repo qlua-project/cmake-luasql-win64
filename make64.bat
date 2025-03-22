@@ -17,6 +17,8 @@ if /I "%1"=="/DEBUG" (
 )
 set CMAKE_INSTALL_PREFIX=%_CURRENT_DIR:~0,-1%
 
+pushd %~dp0
+
 if /I "%STEP%" == "/DUMP" goto DUMPBIN
 if /I "%STEP%" == "/DUMPBIN" goto DUMPBIN
 if /I "%STEP%" == "/CLEAR" goto CLEAN
@@ -26,22 +28,20 @@ if /I "%STEP%" == "/DELETE" goto DELETE
 
 goto CMAKESTEP
 
-pushd %~dp0
-
 :DUMPBIN
 dumpbin64.bat %cmake_build_dir%
 
-goto END
+goto ENDCWD
 
 :CLEAN
 del /Q %cmake_build_dir%\CMakeCache.txt"
 
-goto END
+goto ENDCWD
 
 :DELETE
 rmdir /s /q "%cmake_build_dir%"
 
-goto END
+goto ENDCWD
 
 :CMAKESTEP
 mkdir "%~dp0%cmake_build_dir%"
@@ -89,7 +89,8 @@ goto END
 
 :END
 popd
-
+:ENDCWD
+popd
 :ENDLOCAL
 endlocal
 
