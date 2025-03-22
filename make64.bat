@@ -14,6 +14,7 @@ if /I "%1"=="/DEBUG" (
     set cmake_build_dir=cmake-build-release-%VSCMD_ARG_HOST_ARCH%
     set CMAKE_BUILD_TYPE=Release
     set STEP=%1
+    if NOT "%2" == "" set STEP=%2
 )
 set CMAKE_INSTALL_PREFIX=%_CURRENT_DIR:~0,-1%
 
