@@ -85,6 +85,7 @@ goto END
 :SYSINFO
 :: --system-information [file] it will dump additional information such as the cache, log files etc.
 cmake -G "NMake Makefiles" --system-information "cmake-build-sysinfo.txt"
+copy /y cmake-build-sysinfo.txt %~dp0
 
 goto END
 
